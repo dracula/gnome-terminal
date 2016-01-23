@@ -4,10 +4,10 @@ Smyck Colorscheme for Gnome Terminal
 Scripts for setting the [Smyck color set](http://color.smyck.org/) with Gnome Terminal.
 
 This implementation is a fork of
-https://github.com/Anthony25/gnome-terminal-colors-solarized with the color
-values changed. Essentially all the work was done by that project.
-I have not yet looked into the dircolors stuff. I may some day. Or you can
-submit a pull request :)
+[gnome-terminal-colors-solarized](https://github.com/Anthony25/gnome-terminal-colors-solarized)
+with the color values changed. Essentially all the work was done by that
+project.  I have not yet looked into the dircolors stuff. I may some day. Or you
+can submit a pull request :)
 
 The remainder of this readme is copied from the original repo with instances of
 "solarized" replaced with "smyck" and references to dark vs. light settings
@@ -33,6 +33,8 @@ And just follow the instructions.
 Uninstall
 ---------
 
+[**this section is untested**]
+
 Change to another profile in Gnome Terminal, then remove the Smyck profile
 by running:
 
@@ -49,24 +51,14 @@ Be sure to have the dconf-cli package installed and do:
 Replace PROFILE_ID by your profile ID (you can get it in your profile
 configuration in gnome-terminal).
 
-Themes
-------
-
-Each theme has is own folder in the `colors` dir. It contains 5 files:
-
-  * bd_color: bold color
-  * bg_color: background color
-  * fg_color: foreground color
-  * palette_dconf: palette for dconf (for gnome-terminal 3.8 or higher). Each
-    color is surrounded of simple quotes, and colors are comma separated.
-  * palette_gconf: palette for gconf (for gnome-terminal 3.6 or lower). Colors
-    are separated by colons.
-
-No additional configuration is needed to add a theme, the installation script
-just list at launch the children folders in the `colors` dir.
-
 Contributors
 ------------
+
+### to the smyck version:
+
+* Vinney Cavallo <vcavallo@gmail.com>
+
+### to original gnome solarized project:
 
 * Sigurd Gartmann <sigurdga@sigurdga.no>
 * Anthony Ruhier <anthony.ruhier@gmail.com>
@@ -84,18 +76,4 @@ Use the 16 colors terminal option to get VIM to look like GVIM with smyck
 colors.
 
     set t_Co=16
-
-Mate terminal compatibility
----------------------------
-
-This script has to stay simple, and including Mate compatibility is not what I
-want, even if there is not a lot of changes between Mate-Terminal and
-Gnome-Terminal. Moreover, I do not use Mate so I would only test the script
-quickly in a virtual machine, and it is not the main platform target.
-
-However, I invite anybody to fork this script and to include the modifications
-for Mate (michel-slm already did the job in the pull-request #39, many thanks
-to him !). If it is maintained (like pulling the new commits from this repo
-and following the Mate Terminal changes), I will quote the forked repo in this
-readme.
 
