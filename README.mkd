@@ -1,24 +1,17 @@
-Solarized Colorscheme for Gnome Terminal
+Smyck Colorscheme for Gnome Terminal
 ========================================
 
-Scripts for setting the Solarized color set with Gnome Terminal. To get nicely
-colored directory listings, you will also need to set up a [dircolors solarised
-color theme].
+Scripts for setting the [Smyck color set](http://color.smyck.org/) with Gnome Terminal.
 
-Colors
-------
+This implementation is a fork of
+https://github.com/Anthony25/gnome-terminal-colors-solarized with the color
+values changed. Essentially all the work was done by that project.
+I have not yet looked into the dircolors stuff. I may some day. Or you can
+submit a pull request :)
 
-Only the foreground, background and highlight colors are different in the light
-and dark color sets, as one of the main ideas behind Ethan Schonoovers work is
-to use the same colors in the palette for both.
-
-See the [Solarized homepage] for theory behind the colors, screenshots, details
-and colorscheme versions for Vim, Mutt, popular terminal emulators and other
-applications.
-
-For the original works of Ethan Schoonover, visit the [Solarized repository].
-The scripts for Gnome Terminal is maintained in [Gnome Terminal Colors
-Solarized repository].
+The remainder of this readme is copied from the original repo with instances of
+"solarized" replaced with "smyck" and references to dark vs. light settings
+removed.
 
 Installation and usage
 ----------------------
@@ -37,18 +30,15 @@ Then you can run the installation script:
 
 And just follow the instructions.
 
-You can also run the `set_dark.sh` or `set_light.sh` script, to directly set
-the dark or light solarized theme to the actived gnome-terminal profile.
-
 Uninstall
 ---------
 
-Change to another profile in Gnome Terminal, then remove the Solarized profile
+Change to another profile in Gnome Terminal, then remove the Smyck profile
 by running:
 
 ### Gnome 3.6 or lower
 
-    $ rm -r ~/.gconf/apps/gnome-terminal/profiles/Solarized/
+    $ rm -r ~/.gconf/apps/gnome-terminal/profiles/Smyck/
 
 ### Gnome 3.8 or higher
 
@@ -90,7 +80,7 @@ FAQ
 Conflicting background colors in VIM
 ------------------------------------
 
-Use the 16 colors terminal option to get VIM to look like GVIM with solarized
+Use the 16 colors terminal option to get VIM to look like GVIM with smyck
 colors.
 
     set t_Co=16
@@ -109,7 +99,3 @@ to him !). If it is maintained (like pulling the new commits from this repo
 and following the Mate Terminal changes), I will quote the forked repo in this
 readme.
 
-[Solarized homepage]:   http://ethanschoonover.com/solarized
-[Solarized repository]: https://github.com/altercation/solarized
-[Gnome Terminal Colors Solarized repository]: https://github.com/sigurdga/gnome-terminal-colors-solarized
-[dircolors solarised color theme]: https://github.com/seebi/dircolors-solarized
