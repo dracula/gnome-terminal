@@ -5,7 +5,17 @@ Dracula colorscheme for Gnome Terminal
 
 > A dark colorscheme for [Gnome Terminal](https://github.com/GNOME/gnome-terminal).
 
-This colorscheme is based on the well-known __Solarized Dark__ colorscheme for the Gnome Terminal, it was created using [Dracula's color palette](https://github.com/zenorocha/dracula-theme#color-palette).
+This colorscheme is based on the well-known __Solarized Dark__ colorscheme for the Gnome Terminal, it was created using "[Dracula palette](https://github.com/zenorocha/dracula-theme#color-palette)".
+
+How does it look?
+----------------------
+
+![Screenshot](screenshot.png)
+
+<details>
+  <summary>Sexy!</summary>
+   ![+18](http://i.imgur.com/8TxLYEC.png)   
+</details>
 
 Installation
 ----------------------
@@ -49,4 +59,4 @@ License
 ----------------------
 
 This project is licensed under [GPL3](gpl-3.0.md).
-Vai Dracula, mostra o seu poder
+Vai Dracula, mostra o seu poder!
