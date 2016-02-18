@@ -3,7 +3,6 @@
 gnomeVersion="$(expr "$(gnome-terminal --version)" : '.* \(.*[.].*[.].*\)$')"
 dircolors_checked=false
 
-
 declare -a profiles
 if [ "$newGnome" = "1" ]
   then profiles=($(dconf list $dconfdir/ | grep ^: | sed 's/\///g'))
@@ -11,7 +10,6 @@ else
   profiles=($(gconftool-2 -R $gconfdir | grep $gconfdir | cut -d/ -f5 |  \
            cut -d: -f1))
 fi
-
 
 create_new_profile() {
   profile_id="$(uuidgen)"
@@ -101,7 +99,6 @@ interactive_select_profile() {
 
   profile=${profiles[$profile_key]}
 }
-
 
 check_empty_profile() {
   if [ "$profiles" = "" ]

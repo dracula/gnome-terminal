@@ -9,11 +9,11 @@ DIRCOLORS_DL_ADRESS="https://raw.github.com/seebi/dircolors-solarized/master/"
 dl_dircolors() {
   echo
   eval "wget -O "$DIRCOLORS_SOLARIZED/dircolors" \
-      "$DIRCOLORS_DL_ADRESS/dircolors.ansi-$scheme""
+      "$DIRCOLORS_DL_ADRESS/dircolors.ansi-dark""
   valid=$?
   if [ ! "$valid" == "0" -o ! -e "$DIRCOLORS_SOLARIZED/dircolors" ]
-    then echo -e "Download failed, dircolors will not be copied but you "
-    echo -en "install it from the official repository : "
+    then echo -e "Download failed, dircolors will not be copied but you can "
+    echo -en "install it from the official repository: "
     echo "$DIRCOLORS_REPO_ADRESS"
     return 1
   fi
@@ -92,4 +92,3 @@ warning_message_dircolors() {
   echo -en "If there is any problem with the colors when doing a \"ls\", "
   echo -en "please check your dircolors.\n"
 }
-
