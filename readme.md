@@ -10,15 +10,24 @@ This colorscheme is based on the well-known __Solarized Dark__ colorscheme for t
 Installation
 ----------------------
 
+This theme can be installed on Gnome 3 terminal and any other Gnome based terminal program like the Unity terminal bundled with Ubuntu.
+
 You'll need the `dconf` command (if you run a recent Gnome version). In Ubuntu,this can be installed by running:
 
     $ sudo apt-get install dconf-cli
+
+In other distros you'll need to dig around to find it, search your repositories for __dconf__ related packages.
+
+After installing dconf, you can clone this repository to your machine.
+
+    $ git clone https://github.com/GalaticStryder/gnome-terminal-colors-dracula
+    $ cd gnome-terminal-colors-dracula
 
 Then you can run the installation script:
 
     $ ./install.sh
 
-And just follow the instructions.
+And just follow the steps.
 
 Contributors
 ----------------------
