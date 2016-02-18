@@ -29,6 +29,11 @@ Then you can run the installation script:
 
 And just follow the steps.
 
+Addons
+----------------------
+
+To complement your user experience I recommend installing [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md). This is going to allow commands to have their own colors and styles.
+
 Contributors
 ----------------------
 
