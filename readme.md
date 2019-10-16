@@ -30,7 +30,7 @@ In other distros you'll need to dig around to find it, search your repositories 
 
 After installing dconf, you can clone this repository to your machine.
 
-    $ git clone https://github.com/GalaticStryder/gnome-terminal-colors-dracula
+    $ git clone https://github.com/dracula/gnome-terminal.git
     $ cd gnome-terminal-colors-dracula
 
 Then you can run the installation script:
