@@ -6,18 +6,18 @@ This theme can be installed on Gnome 3 terminal and any other Gnome based termin
 
 You'll need the `dconf` command (if you run a recent Gnome version). In Ubuntu,this can be installed by running:
 
-    $ sudo apt-get install dconf-cli
+    sudo apt-get install dconf-cli
 
 In other distros you'll need to dig around to find it, search your repositories for __dconf__ related packages.
 
 After installing dconf, you can clone this repository to your machine.
 
-    $ git clone https://github.com/dracula/gnome-terminal
-    $ cd gnome-terminal
+    git clone https://github.com/dracula/gnome-terminal
+    cd gnome-terminal
 
 Then you can run the installation script:
 
-    $ ./install.sh
+    ./install.sh
 
 And just follow the steps.
 
